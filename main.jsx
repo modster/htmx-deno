@@ -18,7 +18,7 @@ app.get("/", (c) => {
       <body>
         <div id="parent-div">
           <button
-            hx-post="/htmx"
+            hx-post="/"
             hx-trigger="click"
             hx-target="#parent-div"
             hx-swap="outerHTML"
@@ -36,7 +36,7 @@ app.post("/", (c) => {
   return c.html(
     <div id="parent-div">
       <button
-        hx-post="/htmx"
+        hx-post="/"
         hx-trigger="click"
         hx-target="#parent-div"
         hx-swap="outerHTML"
